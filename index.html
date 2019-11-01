@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>How to explain things</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/simple.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+        <style>
+        .reveal {
+            font-variant: small-caps;
+            font-size: 60pt;
+        }
+
+        blockquote, .texty {
+            font-variant: normal;
+            text-align: left;
+            padding: 0 5em 0 5em;
+            font-size: 40pt;
+        }
+
+        .reveal h1 {
+            font-size: 90pt;
+        }
+        .reveal h2 {
+            font-size: 80pt;
+            margin-bottom: 40pt;
+        }
+
+        .reveal ul li {
+            list-style-type: none;
+        }
+        #footer{
+          position:absolute;
+          bottom: 0%;
+          width: 100%;
+          text-align: center;
+          font-size: 19pt;
+          padding: 0 0 1em 0;
+          font-variant: normal;
+        }
+        img {
+          border: none !important;
+        }
+        </style>
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section class=center>
+                    <h1>academic writing lecture 2 / 3</h1>
+                    <h1 style="font-variant: normal">David R. MacIver</h1>
+                </section>
+
+                <section class=center>
+                    <ul>
+                        <li>academic writing skills</li>
+                        <li style="font-weight: bold">writing skills</li>
+                        <li>communication skills</li>
+                    </ul>
+                </section>
+
+				<section class=center>
+                    <h1>how to write clearly</h1>
+                </section>
+
+				<section class="center">
+                    <p>good news / bad news</p>
+                </section>
+
+                <section>
+                    <h2>how to get better at anything</h2>
+                    <ol>
+                        <li class=fragment>learn to identify good work</li>
+                        <li class=fragment>do work</li>
+                        <li class=fragment>analyze the work</li>
+                        <li class=fragment>do better work</li>
+                    </ol>
+
+                    <p class="texty fragment" style="text-align: center; font-size: 35pt">(see <a href=https://www.drmaciver.com/2019/05/how-to-do-hard-things/>drmaciver.com/2019/05/how-to-do-hard-things/</a> for more details)</p>
+                </section>
+
+                <section>
+                    <h2>how to get better at anything</h2>
+                    <ol>
+                        <li>learn to identify good work</li>
+                        <li>do work</li>
+                        <li style="font-weight: bold">analyze the work</li>
+                        <li style="font-weight: bold">do better work</li>
+                    </ol>
+
+                    <p class="texty" style="text-align: center; font-size: 35pt">(see <a href=https://www.drmaciver.com/2019/05/how-to-do-hard-things/>drmaciver.com/2019/05/how-to-do-hard-things/</a> for more details)</p>
+                </section>
+
+				<section class=center>
+                    <h2>three features of writing</h2>
+                    <table style="border-style: none">
+                        <tr><td data-fragment-index=1 class=fragment style="font-weight:bold">point</td><td class=fragment>what does your writing say?</td></tr>
+                        <tr><td data-fragment-index=2 class=fragment style="font-weight:bold">flow</td><td class=fragment>in what order does it say it?</td></tr>
+                        <tr><td data-fragment-index=3 class=fragment style="font-weight:bold">voice</td><td class=fragment> how does it say it?</td></tr>
+                    </table>
+                </section>
+
+                <section>
+                    <h2>rules of point</h2>
+
+                    <ol>
+                        <li>decide what your point is.</li>
+                        <li>say it.</li>
+                        <li>don't say things that are not your point.</li>
+                    </ol>
+                </section>
+
+                <section>
+                    <h2>rules of flow</h2>
+
+                    <ol>
+                        <li>introduce things before you use them.</li>
+                        <li>connect things to what came before.</li>
+                        <li>keep related things near to each other.</li>
+                    </ol>
+                </section>
+                <section>
+                    <h2>rules of voice</h2>
+
+                    <ol>
+                        <li>write as you want to be read.</li>
+                        <li>find a consistent tone.</li>
+                        <li>find a pace that guides the reader.</li>
+                    </ol>
+                </section>
+
+                <section>
+                    <h2>reading recommendations</h2>
+
+                    <ul class=texty>
+                        <li>"100 Ways to Improve Your Writing"  - Gary Provost</li>
+                        <li>"Style: Toward Clarity and Grace" - Joseph Williams</li>
+                        <li>"Line by Line: How to Edit Your Own Writing" - Claire Cook</li>
+                    </ul>
+                </section>
+			</div>
+	<div id=footer>
+	  https://drmaciver.github.io/academic-writing-lecture-2
+	</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+            function fixMathjax( event ) {
+                if(MathJax) {
+                    setTimeout(function(){MathJax.Hub.Rerender(event.currentSlide);}, 10)
+                }
+            }
+
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+                controls: false,
+                progress: false,
+                history: true,
+                center: false,
+
+                width: '100%',
+                height: '80%',
+
+                transition: 'fade',
+
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true },
+                    { src: 'plugin/math/math.js', async: true },
+				]
+			});
+
+            Reveal.addEventListener('slidechanged', fixMathjax);
+            Reveal.addEventListener('fragmentshown', fixMathjax);
+		</script>
+	</body>
+</html>
