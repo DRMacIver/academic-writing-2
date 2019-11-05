@@ -8,7 +8,7 @@
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/simple.css">
+		<link rel="stylesheet" href="css/theme/drmaciver.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
@@ -83,7 +83,11 @@
                 </section>
 
 				<section class="center">
-                    <p>good news / bad news</p>
+                    <p>good news</p>
+                </section>
+
+				<section class="center">
+                    <p>bad news</p>
                 </section>
 
                 <section>
@@ -110,7 +114,44 @@
                     <p class="texty" style="text-align: center; font-size: 35pt">(see <a href=https://www.drmaciver.com/2019/05/how-to-do-hard-things/>drmaciver.com/2019/05/how-to-do-hard-things/</a> for more details)</p>
                 </section>
 
-				<section class=center>
+                <section>
+                    <h2>how to get better at anything</h2>
+                    <ol>
+                        <li>learn to identify good work</li>
+                        <li style="font-weight: bold;">do work</li>
+                        <li>analyze the work</li>
+                        <li>do better work</li>
+                    </ol>
+
+                    <p class="texty fragment" style="text-align: center; font-size: 35pt">(see <a href=https://www.drmaciver.com/2019/05/how-to-do-hard-things/>drmaciver.com/2019/05/how-to-do-hard-things/</a> for more details)</p>
+                </section>
+
+                <section>
+                    <h2>developing a writing practice</h2>
+
+                    <ul>
+                        <li class=fragment>keep a journal.</li>
+                        <li class=fragment>keep a blog about your course.</li>
+                        <li class=fragment>write explanations for other students.</li>
+                        <li class=fragment>get a twitter account.</li>
+                        <li class=fragment>write fanfiction <span class=fragment>(really).</span></li>
+                    </ul>
+                </section>
+
+                <section class=center>
+                    <h2>reading recommendations</h2>
+                </section>
+
+                <section>
+                    <img style="height: 500px" src="images/100ways.png">
+                    <p>"100 Ways to Improve Your Writing"  - Gary Provost</p>
+                </section>
+                <section>
+                    <img style="height: 500px" src="images/style.png">
+                        <p>"Style: Toward Clarity and Grace" - Joseph Williams</p>
+                </section>
+
+				<section>
                     <h2>three features of writing</h2>
                     <table style="border-style: none">
                         <tr><td data-fragment-index=1 class=fragment style="font-weight:bold">point</td><td class=fragment>what does your writing say?</td></tr>
@@ -119,12 +160,12 @@
                     </table>
                 </section>
 
-				<section class=center>
+				<section>
                     <h2>how to write badly</h2>
                     <table style="border-style: none">
                         <tr><td style="font-weight:bold">point</td><td class=fragment>unclear writing, digressions</td></tr>
                         <tr><td style="font-weight:bold">flow</td><td class=fragment>rambling prose, hard to keep track</td></tr>
-                        <tr><td style="font-weight:bold">voice</td><td class=fragment>stilted or messy text</td></tr>
+                        <tr><td style="font-weight:bold">voice</td><td class=fragment>stilted prose, wrong or inconsistent tone</td></tr>
                     </table>
                 </section>
 
@@ -156,16 +197,6 @@
                         <li>find a pace that guides the reader.</li>
                     </ol>
                 </section>
-
-                <section>
-                    <h2>reading recommendations</h2>
-
-                    <ul class=texty>
-                        <li>"100 Ways to Improve Your Writing"  - Gary Provost</li>
-                        <li>"Style: Toward Clarity and Grace" - Joseph Williams</li>
-                        <li>"Line by Line: How to Edit Your Own Writing" - Claire Cook</li>
-                    </ul>
-                </section>
 			</div>
 	<div id=footer>
 	  https://drmaciver.github.io/academic-writing-lecture-2
@@ -175,13 +206,6 @@
 		<script src="js/reveal.js"></script>
 
 		<script>
-
-            function fixMathjax( event ) {
-                if(MathJax) {
-                    setTimeout(function(){MathJax.Hub.Rerender(event.currentSlide);}, 10)
-                }
-            }
-
 			// More info about config & dependencies:
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
@@ -204,9 +228,6 @@
                     { src: 'plugin/math/math.js', async: true },
 				]
 			});
-
-            Reveal.addEventListener('slidechanged', fixMathjax);
-            Reveal.addEventListener('fragmentshown', fixMathjax);
 		</script>
 	</body>
 </html>
