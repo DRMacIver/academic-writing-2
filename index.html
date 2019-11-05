@@ -46,6 +46,19 @@
         .reveal ul li {
             list-style-type: none;
         }
+
+        .reveal ul.checklist li:before
+        {
+            content: "\2610";
+            margin-right:5px;
+        }
+
+        .reveal ul.checklist li:hover:before
+        {
+            content: "\2611";
+            margin-right:5px;
+        }
+
         #footer{
           position:absolute;
           bottom: 0%;
@@ -59,10 +72,28 @@
           border: none !important;
         }
         table{
-            width: 80%;
+            width: 90%;
             margin: auto;
             text-align: left;
             font-size: 50pt;
+        }
+
+        section.bookrec {
+            margin-top: 40px;
+        }
+
+        section.bookrec img {
+            height: 550px;
+        }
+
+        section.bookrec p {
+            font-variant: normal;
+            padding: 0 5em 0 5em;
+            font-size: 40pt;
+        }
+
+        section.bookrec p.rating {
+            margin-top: 1em;
         }
         </style>
 
@@ -89,11 +120,17 @@
                 </section>
 
 				<section class="center">
+                    <p>good news / bad news</p>
+                </section>
+
+				<section class="center">
                     <p>good news</p>
+                    <p>writing is very learnable</p>
                 </section>
 
 				<section class="center">
                     <p>bad news</p>
+                    <p>not in three lectures</p>
                 </section>
 
                 <section>
@@ -148,21 +185,21 @@
                     <h2>reading recommendations</h2>
                 </section>
 
-                <section>
-                    <img style="height: 500px" src="images/100ways.png">
-                    <p>"100 Ways to Improve Your Writing"  - Gary Provost</p>
-                    <p>(strongest recommendation)</p>
+                <section class=bookrec>
+                    <img src="images/100ways.png">
+                    <p>Provost, 100 ways to improve your writing.</p>
+                    <p class=rating>(strongest recommendation)</p>
                 </section>
-                <section>
-                    <img style="height: 500px" src="images/style.png">
-                    <p>"Style: Toward Clarity and Grace" - Joseph Williams</p>
-                    <p>(very helfpul)</p>
+                <section class=bookrec>
+                    <img src="images/style.png">
+                    <p>Williams, Style : toward clarity and grace.</p>
+                    <p class=rating>(very helpful)</p>
                 </section>
 
-                <section>
-                    <img style="height: 500px" src="images/truth.png">
-                        <p>"Clear and Simple as the Truth" - Thomas and Turner</p>
-                        <p>(optional extra)</p>
+                <section class=bookrec>
+                    <img src="images/truth.png">
+                    <p>Thomas and Turner, Clear and simple as the truth.</p>
+                    <p class=rating>(optional extra)</p>
                 </section>
 
                 <section class=center>
@@ -172,7 +209,7 @@
                 <section>
                     <h2>practical style</h2>
                     <blockquote>
-                        [In Practical style] the reader's need, not the writer's desire to articulate something, initiates the writing. The writer's job is to serve the reader's immediate need by delivering timely materiasl. [...]
+                        [In Practical style] the reader's need, not the writer's desire to articulate something, initiates the writing. The writer's job is to serve the reader's immediate need by delivering timely materials. [...]
                         Since the reader is engaged in solving a problem, the reading is not an end in itself, it is instrumental to some other end.</p>
                         <footer>Thomas and Turner, Clear and Simple as the Truth</footer>
                     </blockquote>
@@ -184,14 +221,16 @@
                         <li>concise</li>
                         <li>direct</li>
                         <li>straightforward</li>
+                        <li>gets out of the reader's way</li>
                     </ul>
                 </section>
 				<section>
-                    <h2>three features of writing</h2>
+                    <h2>features of writing</h2>
                     <table style="border-style: none">
                         <tr><td data-fragment-index=1 class=fragment style="font-weight:bold">point</td><td class=fragment>what does your writing say?</td></tr>
                         <tr><td data-fragment-index=2 class=fragment style="font-weight:bold">flow</td><td class=fragment>in what order does it say it?</td></tr>
-                        <tr><td data-fragment-index=3 class=fragment style="font-weight:bold">voice</td><td class=fragment> how does it say it?</td></tr>
+                        <tr><td data-fragment-index=3 class=fragment style="font-weight:bold">voice</td><td class=fragment>how does it say it?</td></tr>
+                        <tr><td data-fragment-index=4 class=fragment style="font-weight:bold">workflow</td><td class=fragment>how do you write it?</td></tr>
                     </table>
                 </section>
 
@@ -201,6 +240,7 @@
                         <tr><td style="font-weight:bold">point</td><td class=fragment>unclear writing, digressions</td></tr>
                         <tr><td style="font-weight:bold">flow</td><td class=fragment>rambling prose, disjointed topics</td></tr>
                         <tr><td style="font-weight:bold">voice</td><td class=fragment>stilted prose, wrong or inconsistent tone</td></tr>
+                        <tr><td style="font-weight:bold">workflow</td><td class=fragment>erratic writing quality</td></tr>
                     </table>
                 </section>
 
@@ -266,6 +306,7 @@
                         </li>
                     </ol>
                 </section>
+
                 <section>
                     <h2>improving your voice</h2>
                     <blockquote style="font-size: 24pt;">
@@ -277,6 +318,52 @@
                         <p>So write with a combination of short, medium, and long sentences. Create a sound that pleases the reader's ear. Don't just write words. Write music.</p>
                        <footer>— Provost, 100 ways to improve your writing.</footer>
                     </blockquote>
+                </section>
+
+                <section class=center><h2>workflow</h2></section>
+
+                <section>
+                    <h2>rules of workflow</h2>
+
+                    <ol>
+                        <li>you should have one</li>
+                        <li>explicit is better than implicit</li>
+                        <li>design your workflow to help improve you writing</li>
+                    </ol>
+                </section>
+
+                <section>
+                    <h2>improving your workflow</h2>
+                    <ol>
+                        <li>write it down and iterate on it</li>
+                        <li>everyone needs different things</li>
+                        <li>if it helps you it's a good idea</li>
+                    </ol>
+                </section>
+
+                <section>
+                    <h2>some of my good ideas</h2>
+
+                    <ul>
+                        <li class=fragment>spoken drafts.</li>
+                        <li class=fragment>write one to throw away.</li>
+                        <li class=fragment>go for walks (without phone).</li>
+                        <li class=fragment>write a first draft in one sitting.</li>
+                        <li class=fragment>edit printed versions.</li>
+                        <li class=fragment>checklists for important features.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>writing assignment checklist</h2>
+
+                    <ul class=checklist>
+                        <li class=fragment>make your point clearly in the first paragraph.</li>
+                        <li class=fragment>write more than you need then edit it down.</li>
+                        <li class=fragment>write a list of everything you need to explain.</li>
+                        <li class=fragment>read your essay out loud and edit for voice.</li>
+                        <li class=fragment>use a concept list (see last lecture).</li>
+                        <li class=fragment>use a user persona (see last lecture).</li>
+                    </ul>
                 </section>
 			</div>
 	<div id=footer>
